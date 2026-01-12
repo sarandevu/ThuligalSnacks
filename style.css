@@ -65,16 +65,23 @@ body {
 }
 
 /* Hero Section - BURGUNDY BACKGROUND */
+/* Hero Section - UPDATED WITH BANANA CHIPS PATTERN */
 .hero {
     height: 80vh;
-    background: linear-gradient(135deg, #800020, #4a0012); 
+    /* Replace the old gradient with your new image URL */
+    background: url('hero-bg.png') no-repeat center center;
+    /* Ensures the image covers the entire section without stretching */
+    background-size: cover; 
+    
+    /* Adds a dark overlay so the white/gold text is readable */
+    box-shadow: inset 0 0 0 1000px rgba(74, 0, 18, 0.7); 
+    
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: white;
 }
-
 .hero h1 {
     font-size: 3.5rem;
     margin-bottom: 10px;
