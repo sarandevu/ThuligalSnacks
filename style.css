@@ -68,7 +68,14 @@ body {
     text-align: center;
     color: white;
 }
-
+/* Add this to style.css to make the tagline Gold */
+.hero p {
+    color: #FFD700;       /* Gold Color */
+    font-size: 1.8rem;    /* Bigger text */
+    font-weight: 600;     /* Bold */
+    margin-bottom: 25px;  /* Space below the tagline */
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5); /* Adds a shadow so it's readable */
+}
 .hero h1 {
     font-size: 3.5rem;
     margin-bottom: 10px;
