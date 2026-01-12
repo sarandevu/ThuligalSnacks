@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thuligal Snacks | Satisfy Your Cravings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Thuligal Snacks Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">Our Story</a></li>
+            <li><a href="#contact" class="btn-contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>Crave the Crunch.</h1>
+            <p>Handcrafted chips, cookies, and treats made for snacking.</p>
+            <button class="btn-primary" onclick="scrollToMenu()">View Menu</button>
+        </div>
+    </header>
+
+    <section id="menu" class="products">
+        <h2>Our Best Sellers</h2>
+        <div class="product-grid">
+            
+            <div class="product-card">
+                <img src="https://placehold.co/300x200/orange/white?text=Spicy+Chips" alt="Spicy Chips">
+                <h3>Volcano Chips</h3>
+                <p>Super spicy potato chips with a hint of lime.</p>
+                <div class="price">$3.50</div>
+                <button class="btn-add" onclick="addToCart('Volcano Chips')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://placehold.co/300x200/brown/white?text=Choco+Cookies" alt="Cookies">
+                <h3>Midnight Cookies</h3>
+                <p>Double dark chocolate with sea salt.</p>
+                <div class="price">$4.00</div>
+                <button class="btn-add" onclick="addToCart('Midnight Cookies')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://placehold.co/300x200/yellow/black?text=Cheese+Puffs" alt="Puffs">
+                <h3>Cloud Puffs</h3>
+                <p>Airy, cheesy corn puffs that melt in your mouth.</p>
+                <div class="price">$2.99</div>
+                <button class="btn-add" onclick="addToCart('Cloud Puffs')">Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Thuligal Snacks. Made with ❤️ for foodies.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
