@@ -11,7 +11,7 @@ body {
     color: #333;
 }
 
-/* Navbar - INCREASED HEIGHT FOR LOGO */
+/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -22,10 +22,10 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
-    height: 90px; /* Bigger bar to fit the logo */
+    height: 90px;
 }
 
-/* Logo Styling - CENTERED */
+/* Logo Styling - CENTERED WITH GOLD RING */
 .logo {
     display: flex;
     align-items: center;
@@ -33,9 +33,16 @@ body {
 }
 
 .logo img {
-    height: 80px; /* Ensures logo is big and visible */
-    width: auto;
-    object-fit: contain;
+    height: 75px;           /* Slightly smaller to fit border */
+    width: 75px;            /* Forces a perfect square */
+    object-fit: cover;      /* Ensures image fills the circle */
+    border-radius: 50%;     /* Makes the image round */
+    
+    /* THE GOLD RING */
+    border: 3px solid #FFD700; 
+    
+    /* Optional: Adds a shiny glow to the gold */
+    box-shadow: 0 0 5px rgba(255, 215, 0, 0.6); 
 }
 
 .nav-links {
@@ -51,7 +58,7 @@ body {
 }
 
 .btn-contact {
-    background-color: #800020; /* Burgundy Color */
+    background-color: #800020; /* Burgundy */
     color: #fff !important;
     padding: 8px 16px;
     border-radius: 20px;
@@ -60,7 +67,6 @@ body {
 /* Hero Section - BURGUNDY BACKGROUND */
 .hero {
     height: 80vh;
-    /* This line creates the Burgundy color */
     background: linear-gradient(135deg, #800020, #4a0012); 
     display: flex;
     justify-content: center;
@@ -68,17 +74,19 @@ body {
     text-align: center;
     color: white;
 }
-/* Add this to style.css to make the tagline Gold */
-.hero p {
-    color: #FFD700;       /* Gold Color */
-    font-size: 1.8rem;    /* Bigger text */
-    font-weight: 600;     /* Bold */
-    margin-bottom: 25px;  /* Space below the tagline */
-    text-shadow: 1px 1px 4px rgba(0,0,0,0.5); /* Adds a shadow so it's readable */
-}
+
 .hero h1 {
     font-size: 3.5rem;
     margin-bottom: 10px;
+}
+
+/* Hero Tagline - GOLD TEXT */
+.hero p {
+    color: #FFD700;       /* Gold Color */
+    font-size: 1.8rem;    
+    font-weight: 600;     
+    margin-bottom: 25px;  
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5); 
 }
 
 .btn-primary {
@@ -89,7 +97,6 @@ body {
     font-size: 1.2rem;
     cursor: pointer;
     border-radius: 5px;
-    margin-top: 20px;
     font-weight: bold;
     transition: transform 0.3s;
 }
@@ -148,7 +155,7 @@ body {
 
 .price {
     font-size: 1.2rem;
-    color: #800020; /* Burgundy Price */
+    color: #800020; /* Burgundy */
     font-weight: bold;
     margin: 10px 0;
 }
